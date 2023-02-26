@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="catering.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    <title>Gourmet Catering</title>
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <!--begin nav-->
+            <ul id="nav">
+                <li class="left"><a href="#main">Gourmet au Catering</a></li>
+                <li class="right"><a href="#contact">Contact</a></li>
+                <li class="right"><a href="#menu-content">Menu</a></li>
+                <li class="right"><a href="#about-content">About</a></li>
+            </ul>
+            <!--end nav-->
+        </div>
+
+        <div id="slider">
+            <img src="./img/slider.jpg" alt="slider">
+            <p>Le Catering</p>
+        </div>
+
+        <!--begin content-->
+        <div id="content">
+            <div id="about-content">
+                <div class="about-left">
+                    <img class="img-content" src="./img/about.jpg" alt="About Catering">
+                </div>
+                <div class="about-right">
+                    <p class="h1">About Catering</p>
+                    <br>
+                    <p class="spacing">Tradition since 1889</p>
+                    <p class="black">The Catering was founded in blabla by Mr. Smith in 
+                        lorem ipsum dolor sit amet, consectetur adipiscing 
+                        elit consectetur adipiscing elit, sed do eiusmod 
+                        tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute iruredolor in reprehenderit in voluptate velit 
+                        esse cillum dolore eu fugiat nulla pariatur.We only use 
+                        <span class="highlight-text">seasonal </span> ingredients.</p>
+                    <p class="opacity">Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim
+                        id est laborum consectetur adipiscing elit, sed do eiusmod
+                        temporincididunt ut labore et dolore magna aliqua. Ut enim
+                        ad minim veniam, quis nostrud exercitation ullamco laboris
+                        nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+            <hr>
+            <div id="menu-content">
+                <div class="about-left">
+                    <p class="h1">Our Menu</p>
+                    <br>
+                    <p class="spacing">Bread Basket</p>
+                    <p class="opacity">Assortment of fresh baked fruit breads and
+                        muffins 5.50</p>
+                    <br>
+                    <p class="spacing">Honey Almond Granola with Fruits</p>
+                    <p class="opacity">Natural cereal of honey toasted oats, raisins, 
+                        almonds and dates 7.00</p>
+                    <br>
+                    <p class="spacing">Belgian Waffle</p>
+                    <p class="opacity">Vanilla flavored batter with malted flour
+                        7.50</p>
+                    <br>
+                    <p class="spacing">Scrambled eggs</p>
+                    <p class="opacity">Scrambled eggs, roasted red pepper and 
+                        garlic, with green onions 7.50</p>
+                    <br>
+                    <p class="spacing">Blueberry Pancakes</p>
+                    <p class="opacity">With syrup, butter and lots of berries 8.50</p>
+                </div>
+                <div class="about-right">
+                    <img class="img-content" src="./img/menu.jpg" alt="menu">
+                </div>
+            </div>
+
+            <div id="contact">
+                <p class="h1" style="text-align: left;">Contact</p>
+                <br>
+                <p >We offer full-service catering for any event,
+                    large or small. We understand your needs and we will cater 
+                    the food to satisfy the biggerst criteria of them all, both 
+                    look and taste.
+                    <br>Do not hesitate to contact us.</p>
+                <p style="color: #607d8b; font-weight: 800; font-size: 18px;">
+                    Catering Service, 42nd Living St, 43043 New York, NY</p>
+                <p>You can also contact us by phone 00553123-2323 or email 
+                    catering@catering.com, or you can send us a message here:</p>  
+                <div id="get-infomation">
+                    <input name="name" type="text" placeholder="Name"><br>
+                    <span class="error-text name-error"></span>
+                    <input name="number-of-people" type="number" min="0" placeholder="How many people"><br>
+                    <span class="error-text number-of-people-error"></span>
+                    <input name="order-date" type="datetime-local" value="2023-03-01T20:00"><br>
+                    <span class="error-text order-date-error"></span>
+                    <input name="requirements" type="text" placeholder="Message \ Special requirements"><br>
+                    <span class="error-text requirements-error"></span>
+                    <div class="submit-btn">
+                        <button type="button">SEND MESSAGE</button>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <!--end content-->
+
+        <!--footer-->
+        <div id="footer">
+            <p>Powered by <a href="">w3.css</a></p>   
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>

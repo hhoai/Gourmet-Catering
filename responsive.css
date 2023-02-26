@@ -1,0 +1,123 @@
+/* mobile: width < 740px */
+@media only screen and (max-width: 46.1875em) {
+    #header #nav .right {
+        display: none;
+    }
+
+    #header #nav .left {
+        padding-left: 10px;
+    }
+
+    #slider img {
+        height: auto;
+    }
+
+    #slider {
+        position: relative;
+    }
+
+    #slider p {
+        position: absolute;
+        z-index: 15;
+        left: 20px;
+        bottom: 20px;
+        top: unset;
+        font-size: 24px;
+    }
+
+    #about-content .about-left {
+        display: none;
+    }
+
+    #menu-content {
+        flex-direction: column;
+        /* display: block; */
+    }
+
+    #menu-content .about-left {
+        align-items: center;
+    }
+
+    #contact {
+        padding: 64px 48px;
+    }
+
+    .submit-btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    button {
+        padding: 14px 27px;
+    }
+
+    #about-content,
+    #menu-content {
+        padding: 25px;
+    }
+}
+
+/* tablet: width >= 740px && < 1024px */
+@media only screen and (max-width: 63.9375em) and (min-width: 46.25em) {
+    #slider {
+        position: relative;
+    }
+    #slider img {
+        height: auto;
+    }
+    #slider p {
+        position: absolute;
+        z-index: 15;
+        left: 20px;
+        bottom: 20px;
+        top: unset;
+    }
+
+    #about-content .about-left,
+    #about-content .about-right {
+        width: 49.9999999%;
+    }
+
+    #about-content {
+        padding: 64px 10px;
+    }
+
+    #menu-content {
+        padding: 64px 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #menu-content .about-left {
+        margin: auto;
+        width: 100%;
+    } 
+
+    #about-content .opacity {
+        display: none;
+    }
+
+    .about-right > img {
+        width: 100%;
+    }
+
+    #contact {
+        padding: 64px 25px;
+    }
+
+    button {
+        padding: 14px 27px;
+    }
+
+    .submit-btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* pc: width > 1024px*/
+@media only screen and (min-width: 64em) {
+
+}
