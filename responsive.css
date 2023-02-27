@@ -22,7 +22,7 @@
         left: 20px;
         bottom: 20px;
         top: unset;
-        font-size: 24px;
+        font-size: 26px;
     }
 
     #about-content .about-left {
@@ -30,6 +30,7 @@
     }
 
     #menu-content {
+        padding-top: 30px;
         flex-direction: column;
         /* display: block; */
     }
@@ -37,10 +38,10 @@
     #menu-content .about-left {
         align-items: center;
     }
-
+/* 
     #contact {
         padding: 64px 48px;
-    }
+    } */
 
     .submit-btn {
         width: 100%;
@@ -51,11 +52,11 @@
     button {
         padding: 14px 27px;
     }
-
+/* 
     #about-content,
     #menu-content {
         padding: 25px;
-    }
+    } */
 }
 
 /* tablet: width >= 740px && < 1024px */
@@ -119,5 +120,20 @@
 
 /* pc: width > 1024px*/
 @media only screen and (min-width: 64em) {
+    #slider img {
+        height: auto;
+    }
 
+    #slider {
+        position: relative;
+    }
+
+    #slider p {
+        position: absolute;
+        z-index: 15;
+        left: 20px;
+        bottom: 20px;
+        top: unset;
+        font-size: 36px;
+    }
 }

@@ -53,6 +53,10 @@ html {
     background-color: rgb(210, 205, 205);
 }
 
+a:hover {
+    cursor: pointer;
+}
+
 #slider img {
     position: relative;
     z-index: 10;
@@ -87,11 +91,12 @@ html {
 
 .about-left {
     width: 501px;
-    padding: 12px 24px;
+    padding: 1px 24px;
     margin: 0;
 }
 
 .img-content {
+    margin-top: 20px;
     width: 501px;
     border-radius: 6px;
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
@@ -101,14 +106,14 @@ html {
     /* 0 0 1 */
     /* shorthand: flex-grow flex-shrink flex-basis */
     flex: 1;
-    padding: 12px 24px;
+    padding: 1px 24px;
 
 }
 
 .h1 {
     font-size: 36px;
     letter-spacing: 5px;
-    padding: 10px;
+    /* padding: 10px; */
     text-align: center;
 }
 
@@ -149,8 +154,11 @@ html {
 }
 
 #contact {
-    padding: 64px 0;
+    padding: 30px 20px;
     text-align: left;
+}
+
+#contact .h1 {
 }
 
 #contact p{
