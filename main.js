@@ -2,18 +2,21 @@ const nameInput = document.querySelector("#get-infomation input[name='name']");
 const numOfPeopleInput = document.querySelector("#get-infomation input[name='number-of-people']");
 const dateInput = document.querySelector("#get-infomation input[name='order-date']");
 const reqInput = document.querySelector("#get-infomation input[name='requirements']");
+const phoneNumberInput = document.querySelector("#get-infomation input[name='phone-number']");
 
 const nameError = document.querySelector("#get-infomation .name-error");
 const numOfPeopleError = document.querySelector("#get-infomation .number-of-people-error");
 const dateError = document.querySelector("#get-infomation .order-date-error");
 const reqError = document.querySelector("#get-infomation .requirements-error");
+const phoneNumberError = document.querySelector("#get-infomation .phone-number-error");
 
 const sendMessageBtn = document.querySelector(".submit-btn button");
 
 const errorMessage = {
-    name: "Vui lòng nhập tên",
-    numberOfPeople: "Vui lòng nhập số người",
-    orderDate: "Vui lòng chọn lại ngày",
+    name: "Vui lòng nhập tên!",
+    numberOfPeople: "Vui lòng nhập số người!",
+    orderDate: "Vui lòng chọn lại ngày!",
+    phoneNumber: "Vui lòng nhập số điện thoại!"
 }
 
 sendMessageBtn.onclick = function(e){
@@ -27,7 +30,7 @@ sendMessageBtn.onclick = function(e){
         bindingErrorToUI(errors);
         return;
     }
-    bindingErrorToUI({})
+    bindingErrorToUI({});
     let timeout = null;
     if(timeout) {
         clearTimeout(timeout);
@@ -44,6 +47,7 @@ function getResult() {
         name: nameInput.value,
         numberOfPeople: numOfPeopleInput.value,
         orderDate: dateInput.value,
+        phoneNumber: phoneNumberInput.value,
         requirements: reqInput.value,
     };
 }
@@ -64,6 +68,7 @@ function bindingErrorToUI(errorObj) {
     nameError.innerHTML = errorObj["name"] || "";
     numOfPeopleError.innerHTML = errorObj["numberOfPeople"] || "";
     dateError.innerHTML = errorObj["orderDate"] || "";
+    phoneNumberError.innerHTML = errorObj["phoneNumber"] || "";
 }
 
 function checkValidOrderDate(orderDate) {
@@ -91,4 +96,5 @@ function clearInput() {
     numOfPeopleInput.value = "";
     dateInput.value = new Date();
     reqInput.value = "";
+    phoneNumberInput.value = "";
 }

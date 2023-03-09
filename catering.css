@@ -16,7 +16,7 @@ html {
 }
 
 #nav {
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    box-shadow: 0 0 10px #0000004d;
     width: 100%;
     background-color: white;
     position: fixed;
@@ -43,14 +43,14 @@ html {
 
 #nav li a {
     text-decoration: none;
-    color: black;
+    color: #000000;
     letter-spacing: 4px;
     text-align: center;
 }
 
 #nav li:hover {
     cursor: pointer;
-    background-color: rgb(210, 205, 205);
+    background-color: #d2cdcd;
 }
 
 a:hover {
@@ -66,7 +66,7 @@ a:hover {
 }
 
 #slider p {
-    color: rgb(106, 104, 104);
+    color: #6a6868;
     letter-spacing: 4px;
     position: absolute;
     z-index: 15;
@@ -99,7 +99,7 @@ a:hover {
     margin-top: 20px;
     width: 501px;
     border-radius: 6px;
-    box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 7px #00000080;
 }
 
 .about-right {
@@ -124,7 +124,7 @@ a:hover {
 }
 .highlight-text {
     margin: 0;
-    background-color: rgb(238, 238, 238);
+    background-color: #eeeeee;
     width: fit-content;
     display: inline-block;
     padding: 0px 8px;
@@ -188,8 +188,8 @@ button {
 
 button:hover {
     cursor: pointer;
-    background-color: rgb(199, 196, 196);
-    color: black;
+    background-color: #c7c4c4;
+    color: #000000;
     border: none;
     font-size: 16px;
 }
@@ -199,7 +199,7 @@ button:hover {
     padding: 32px 0;
     height: 112.5px;
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: #000000;
     font-size: 15px;
 }
 
@@ -208,11 +208,11 @@ button:hover {
 }
 
 #footer a {
-    color: rgb(0, 0, 0);
+    color: #000000;
 }
 .error-text {
     display: inline-block;
-    color: red;
+    color: #ff0000;
     margin-left: 8px;
 }
 
